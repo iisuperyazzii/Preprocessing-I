@@ -1,1 +1,308 @@
-/* Compile your LESS file! */
+.row-flex {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 900px;
+}
+.master-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  background-color: white;
+
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  width: 100%;
+  background-color: white;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+nav a:hover {
+  color: darkgrey;
+}
+.my-image {
+  width: 35%;
+  height: 35%;
+  margin: 50px 0px 30px 50px;
+  border-radius: 360px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px 0px 10px 30px;
+}
+h2 {
+  font-size: 2rem;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0px 0px 10px 30px;
+}
+#top p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2rem;
+  padding: 10px;
+  margin: 20px 0px 10px 40px;
+}
+button {
+  margin: 30px 0px 30px 40px;
+  padding: 10px;
+  width: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: darkgrey;
+}
+#middle {
+  display: flex;
+  background-color: white;
+}
+#middle .container-1 {
+  padding: 30px;
+  width: 49%;
+}
+#middle .container-1 h2 {
+  margin: 0px 0px 10px 0px;
+}
+#middle .container-1 p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+@media (max-width: 900px) {
+  #middle .container-1 h2 {
+    margin: 0px 0px 10px 40px;
+  }
+  #middle .container-1 p {
+    padding: 0px;
+  }
+}
+#middle .container-2 {
+  height: 45%;
+  padding: 30px;
+}
+#middle .container-2 h2 {
+  margin-bottom: 10px;
+  width: 100%;
+}
+#middle .container-2 p {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 25px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+}
+#middle .container-2 p:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+@media (max-width: 900px) {
+  #middle {
+    flex-direction: column;
+  }
+  #middle .container-1 {
+    width: 100%;
+  }
+  #middle p {
+    margin-left: 25px;
+    padding: 20px;
+  }
+}
+#bottom {
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+}
+#bottom .head {
+  margin: 20px 0px 0px -50px;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  #bottom .head {
+    margin: 20px 0px 0px 0px;
+  }
+}
+#bottom .head > p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+#bottom .row-1 {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+  background-color: bisque;
+}
+#bottom .row-1 > p {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+}
+#bottom .row-2 {
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+}
+#bottom .row-2 > p {
+  width: 100%;
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+footer {
+  text-align: center;
+  color: white;
+  background-color: grey;
+  font-family: 'Roboto Mono', monospace;
+  padding: 30px;
+}
